@@ -13,9 +13,14 @@ This project explores **robotic motion planning** using Python, computer vision,
   - Collects all obstacle and goal points for path computation.  
   - Employs **Voronoi diagrams** (via `scipy.spatial.Voronoi`) to construct roadmap structures.  
 
+- **Pathfinding Algorithms**:  
+  - Implements **Dijkstra’s Algorithm** to compute the shortest path across the Voronoi roadmap.  
+  - Implements **A*** for efficient pathfinding with heuristic guidance.  
+  - Ensures obstacle avoidance by leveraging roadmap connectivity.  
+
 - **Visualization**:  
   - Displays the map and planning process with **OpenCV** and **Matplotlib**.  
-  - Overlays obstacles, start/goal points, and Voronoi edges on the workspace.  
+  - Overlays obstacles, start/goal points, Voronoi edges, and computed paths.  
 
 ## Technologies Used
 - **Python 3.x**  
@@ -31,7 +36,8 @@ This project explores **robotic motion planning** using Python, computer vision,
   - Load Map  
   - Define Obstacles and Goals  
   - Generate Voronoi Diagram  
-  - Visualization and Path Planning  
+  - Pathfinding with Dijkstra’s Algorithm and A*  
+  - Visualization and Results  
 
 ## How to Run
 1. Clone or download the repository.  
@@ -43,7 +49,7 @@ This project explores **robotic motion planning** using Python, computer vision,
    ```bash
    jupyter notebook "Motion Planing.ipynb"
    ```  
-4. Run all cells to visualize the motion planning process.  
+4. Run all cells to visualize the motion planning and pathfinding process.  
 
 ## Author
 **Gal Schechter**
